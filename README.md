@@ -1,5 +1,6 @@
-# Project 2: Physics-Informed Neural Network
-## Team: Anshika Zakireddy, Anakin Dasgupta, Varish Matlapudi
+# Project: Neural Operator for the Heat Equation
 
-### Objective: With noisy/random data, train a neural network on the 1-D heat differential equation
+### Objective: With initial conditions and a material as an input, train a neural operator to predict the distribution of heat throughout a rod at any time, with this equation:
 ### $\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2} $
+
+### Then use active learning with selective sampling (based on ensemble disagreement) to fine tune, and compare to if training was randomly sampled.
